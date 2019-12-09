@@ -4,9 +4,10 @@
 }
 
 body, html {
+  opacity: 0;
   height: 100%;
   background: rgb(45, 45, 45);
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 2.5s forwards;
 }
 
 body > div.BG {
