@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  height: 100%;
+  background: rgb(45, 45, 45);
+  animation: fadeIn 1.5s ease-in;
+}
+
+body > div.BG {
+  height: 100%;
+  background-position: 5% 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+body a.nav {
+  opacity: 0;
+  transform: translate3d(0, 18vh, 0);
+  text-decoration: none;
+  color: black;
+  animation: fadeInBottom 2s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInBottom {
+  0% {transform: translate3d(0, 0vh, 0);}
+  100% {opacity: 1; transform: translate3d(0, 18vh, 0);}
+}
+
+body nav.moreInfo {
+  background: linear-gradient(120deg, rgb(211, 225, 255) 50%, rgb(179, 214, 255) 100%);
+  border-radius: 2.5vmin;
+  font-family: Verdana;
+  animation-delay: 2s;
+  animation: shadowPulse 2.8s ease-in-out infinite;
+  text-align: center;
+  font-size: 6.5vmin;
+  padding: 2vmin 3vmin;
+  transition: font-size linear 0.15s;
+}
+body nav.moreInfo:hover {font-size: 7vmin;}
+@media only screen and (orientation: portrait) {
+  body nav.moreInfo {font-size: 8.5vmin;padding: 3vmin 5vmin;}
+  body nav.moreInfo:hover {font-size: 9.5vmin;}
+}
+
+@keyframes shadowPulse {
+  0% {box-shadow: 0.5vmin 0.5vmin 2vmin transparent;}
+  50% {box-shadow: 0.5vmin 0.5vmin 2vmin white;}
+  100% {box-shadow: 0.5vmin 0.5vmin 2vmin transparent;}
+}
+
+#NextSundayService {
+  opacity: 0;
+  background: white;
+  padding: 2vmin;
+  border-radius: 2vmin;
+  width: 65vmin;
+  font-family: Verdana;
+  box-shadow: .8vmin .8vmin 1.8vmin .5vmin #7b9aff, -.8vmin -.8vmin 1.8vmin .5vmin #80ff91;
+  animation: fadeInMiddle 2s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInMiddle {
+  0% {transform: translate3d(0, -20vh, 0);}
+  100% {opacity: 1; transform: translate3d(0, 0, 0);}
+}
+
+#ServiceHeading {
+  text-decoration: underline;
+  font-size: 4vmin;
+  padding-bottom: .5%;
+}
+
+#ServiceParagraph {
+  font-size: 2.8vmin;
+}
+
+/*Home.html backgrounds*/
+  /*For smartphones (portrait)*/
+    /*2nd most common 2019 UK and smaller (1080x1920p)*/
+    @media only screen and (max-width: 1080px) and (orientation: portrait) {
+      #background {background-image: url("/ChurchA-SP-2MC.jpg");} /*1080x1920p*/
+    }
+    /*Sony Xperia XZ and Z5 Premium the highest resolution smartphones and smaller (2160x3840p)*/
+    @media only screen and (min-width: 1081px) and (orientation: portrait) {
+      #background {background-image: url("/ChurchA-SP-Max.jpg");} /*1700x3024*/
+    }
+
+  /*For landscape screens*/
+    @media only screen and (orientation: landscape) {#background {background-position: 5% 60%;}}
+    /*1920x1080p and smaller 1st most common size 2019*/
+    @media only screen and (max-width: 1920px) and (orientation: landscape) {
+      #background {background-image: url("/ChurchA-DT-1MC.jpg");} /*1920x1080p*/
+    }
+    /*Any screen wider than 1920p (4K 3840x2160, etc)*/
+    @media only screen and (min-width: 1921px) and (orientation: landscape) {
+      #background {background-image: url("/ChurchA-DT-Max.jpg");} /*4032x3024p*/
+    }
+
+/*St-Andrew.html backgrounds*/
+  #backgroundA {background-position: 50% 50%;}
+  /*For smartphones (portrait)*/
+    /*2nd most common 2019 UK and smaller (1080x1920p)*/
+    @media only screen and (max-width: 1080px) and (orientation: portrait) {
+      #backgroundA {background-image: url("/ChurchAI-SP-2MC.jpg");} /*1080x1920p*/
+    }
+    /*Sony Xperia XZ and Z5 Premium the highest resolution smartphones and smaller (2160x3840p)*/
+    @media only screen and (min-width: 1081px) and (orientation: portrait) {
+      #backgroundA {background-image: url("/ChurchAI-SP-Max.jpg");} /*1700x3024*/
+    }
+  /*For landscape screens*/
+    /*1920x1080p and smaller 1st most common size 2019*/
+    @media only screen and (max-width: 1920px) and (orientation: landscape) {
+      #backgroundA {background-image: url("/ChurchAI-DT-1MC.jpg");} /*1920x1080p*/
+    }
+    /*Any screen wider than 1920p (4K 3840x2160, etc)*/
+    @media only screen and (min-width: 1921px) and (orientation: landscape) {
+      #backgroundA {background-image: url("/ChurchAI-DT-Max.jpg");} /*4032x3024p*/
+    }
