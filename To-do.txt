@@ -1,7 +1,0 @@
-1. Make a favicon.
-
-2. Change the page fade-in to onload with Javascript.
-
-3. Add St. Peter's church onto the front page.
-
-4. Make an interactive calendar for the service dates and information.
