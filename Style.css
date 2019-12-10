@@ -31,8 +31,7 @@ body a.nav {
   text-decoration: none;
   outline: 0;
   color: black;
-  animation: fadeInBottom 2s forwards;
-  animation-delay: 0.5s;
+  animation: fadeInBottom 2s forwards 0.5s;
 }
 
 @keyframes fadeInBottom {
