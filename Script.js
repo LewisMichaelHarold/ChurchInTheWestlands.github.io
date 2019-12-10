@@ -16,11 +16,12 @@ else if (nextSunday == 3 || nextSunday == 23){
 var oNS = "Our next service is on Sunday the ";
 var atT = " at 10:30am. This will be our";
 var sTM = "service of the month.";
+var nSS = oNS + nextSunday + stndrd + atT;
 
 if (dayofweek == 0) {
   document.getElementById("ServiceHeading").innerHTML = "Today's service";
   if (dayofmonth < 8) {
-    nexteventp.innerHTML = "Today is the Holy Communion which is our first service of the month. Join us at 11:00.";
+    nexteventp.innerHTML = "Today is the Holy Communion which is our first service of the month. Join us at 10:30.";
   } 
   else if (dayofmonth < 15) {
     nexteventp.innerHTML = "Today is our second service of the month. Join us at 10:30am.";
@@ -38,18 +39,18 @@ if (dayofweek == 0) {
 else if (dayofweek !== 0) {
   document.getElementById("ServiceHeading").innerHTML = "Next Sunday's service";
   if (nextSunday < 7) {
-    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " first " + sTM;
+    nexteventp.innerHTML = nSS + " first " + sTM;
     }
   else if (nextSunday < 14) {
-    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " second " + sTM;
+    nexteventp.innerHTML = nSS + " second " + sTM;
   }
   else if (nextSunday < 21) {
-    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " third " + sTM;
+    nexteventp.innerHTML = nSS + " third " + sTM;
   }
   else if (nextSunday < 28) {
-    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " fourth " + sTM;
+    nexteventp.innerHTML = nSS + " fourth " + sTM;
   }
   else {
-    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " fifth " + sTM;
+    nexteventp.innerHTML = nSS + " fifth " + sTM;
   }
 }
