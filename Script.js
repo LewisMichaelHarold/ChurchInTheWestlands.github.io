@@ -1,20 +1,17 @@
-//Make an interactive calendar
-
 var theDate = new Date();
-/* Use this to set the day the of month for testing: */ theDate.setDate(4);
 var dayofweek = theDate.getDay();
 var dayofmonth = theDate.getDate();
 var nexteventp = document.getElementById("ServiceParagraph");
-var stNdRd = "th";
+var stndrd = "th";
 var nextSunday = dayofmonth - dayofweek + 7;
 if (nextSunday == 1 || nextSunday == 21 || nextSunday == 31) {
-  stNdRd = "st";
+  stndrd = "st";
 }
 else if (nextSunday == 2 || nextSunday == 22){
-  stNdRd = "nd";
+  stndrd = "nd";
 }
 else if (nextSunday == 3 || nextSunday == 23){
-  stNdRd = "rd";
+  stndrd = "rd";
 }
 var oNS = "Our next service is on Sunday the ";
 var atT = " at 10:30am. This will be our";
@@ -41,18 +38,18 @@ if (dayofweek == 0) {
 else if (dayofweek !== 0) {
   document.getElementById("ServiceHeading").innerHTML = "Next Sunday's service";
   if (nextSunday < 7) {
-    nexteventp.innerHTML = oNS + nextSunday + stNdRd + atT + " first " + sTM;
+    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " first " + sTM;
     }
   else if (nextSunday < 14) {
-    nexteventp.innerHTML = oNS + nextSunday + stNdRd + atT + " second " + sTM;
+    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " second " + sTM;
   }
   else if (nextSunday < 21) {
-    nexteventp.innerHTML = oNS + nextSunday + stNdRd + atT + " third " + sTM;
+    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " third " + sTM;
   }
   else if (nextSunday < 28) {
-    nexteventp.innerHTML = oNS + nextSunday + stNdRd + atT + " fourth " + sTM;
+    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " fourth " + sTM;
   }
   else {
-    nexteventp.innerHTML = oNS + nextSunday + stNdRd + atT + " fifth " + sTM;
+    nexteventp.innerHTML = oNS + nextSunday + stndrd + atT + " fifth " + sTM;
   }
 }
