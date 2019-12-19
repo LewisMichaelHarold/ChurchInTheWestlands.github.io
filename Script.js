@@ -1,10 +1,15 @@
+window.onload = function() {
+  document.body.style.animation = "fadeIn 2.5s forwards 0.5s";
+  document.body.style.WebkitAnimation = "fadeIn 2.5s forwards 0.5s";
+}
+
 var theDate = new Date();
 var dayofweek = theDate.getDay();
 var dayofmonth = theDate.getDate();
-var nexteventp = document.getElementById("ServiceParagraph");
+var nexteventp = ServiceParagraph;
 
 if (dayofweek == 0) {
-  document.getElementById("ServiceHeading").innerHTML = "Today's service";
+  ServiceHeading.innerHTML = "Today's service";
   if (dayofmonth < 8) {
     nexteventp.innerHTML = "Today is the Holy Communion which is our first service of the month. Join us at 10:30.";
   } 
@@ -22,7 +27,7 @@ if (dayofweek == 0) {
   }
 }
 else if (dayofweek !== 0) {
-  document.getElementById("ServiceHeading").innerHTML = "Next Sunday's service";
+  ServiceHeading.innerHTML = "Next Sunday's service";
   var nextSunday = dayofmonth - dayofweek + 7;
   if (nextSunday < 7) {var fstf = " first ";}
   else if (nextSunday < 14) {var fstf =  " second ";}
@@ -32,10 +37,10 @@ else if (dayofweek !== 0) {
   var oNS = "Our next service is on Sunday the ";
   var atT = " at 10:30am. This will be our";
   var sTM = "service of the month.";
-  var stndrd = "th";
-  if (nextSunday == 1 || nextSunday == 21 || nextSunday == 31) {stndrd = "st";}
-  else if (nextSunday == 2 || nextSunday == 22){stndrd = "nd";}
-  else if (nextSunday == 3 || nextSunday == 23){stndrd = "rd";}
-  var nSS = oNS + nextSunday + stndrd + atT + fstf + sTM;
+  var suffix = "th";
+  if (nextSunday == 1 || nextSunday == 21 || nextSunday == 31) {suffix = "st";}
+  else if (nextSunday == 2 || nextSunday == 22){suffix = "nd";}
+  else if (nextSunday == 3 || nextSunday == 23){suffix = "rd";}
+  var nSS = oNS + nextSunday + suffix + atT + fstf + sTM;
   nexteventp.innerHTML = nSS;
 }
