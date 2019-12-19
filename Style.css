@@ -4,10 +4,12 @@
 }
 
 body, html {
-  opacity: 0;
   height: 100%;
   background: rgb(45, 45, 45);
-  animation: fadeIn 2.5s forwards 0.5s;
+}
+
+body {
+  opacity: 0;
 }
 
 body > div.BG {
@@ -53,7 +55,7 @@ body nav.moreInfo {
 body nav.moreInfo:hover {font-size: 7vmin;}
 @media only screen and (orientation: portrait) {
   body nav.moreInfo {font-size: 8.5vmin;padding: 3vmin 5vmin;}
-  body nav.moreInfo:hover {font-size: 9.5vmin;}
+  body nav.moreInfo:hover {font-size: 9vmin;}
 }
 
 @keyframes shadowPulse {
