@@ -34,6 +34,7 @@ body a.nav {
   outline: 0;
   color: black;
   animation: fadeInBottom 2s forwards 0.5s;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 @keyframes fadeInBottom {
@@ -42,26 +43,27 @@ body a.nav {
 }
 
 body nav.moreInfo {
-  background: linear-gradient(120deg, rgb(211, 225, 255) 50%, rgb(179, 214, 255) 100%);
-  border-radius: 2.5vmin;
+  background: white;
+  border: .6vmin solid black;
   font-family: Verdana;
   animation-delay: 2s;
-  animation: shadowPulse 2.8s ease-in-out infinite;
+  animation: shadowPulse 3s ease-in-out infinite;
   text-align: center;
   font-size: 6.5vmin;
   padding: 2vmin 3vmin;
   transition: font-size linear 0.15s;
 }
 body nav.moreInfo:hover {font-size: 7vmin;}
+
 @media only screen and (orientation: portrait) {
   body nav.moreInfo {font-size: 8.5vmin;padding: 3vmin 5vmin;}
   body nav.moreInfo:hover {font-size: 9vmin;}
 }
 
 @keyframes shadowPulse {
-  0% {box-shadow: 0.5vmin 0.5vmin 2vmin transparent;}
-  50% {box-shadow: 0.5vmin 0.5vmin 2vmin white;}
-  100% {box-shadow: 0.5vmin 0.5vmin 2vmin transparent;}
+  0% {box-shadow: 0 0 .2vmin .3vmin white;}
+  50% {box-shadow: 0 0 2vmin .3vmin white;}
+  100% {box-shadow: 0 0 .2vmin .3vmin white;}
 }
 
 #NextSundayService {
@@ -71,7 +73,7 @@ body nav.moreInfo:hover {font-size: 7vmin;}
   border-radius: 2vmin;
   width: 65vmin;
   font-family: Verdana;
-  box-shadow: .8vmin .8vmin 1.8vmin .5vmin #7b9aff, -.8vmin -.8vmin 1.8vmin .5vmin #80ff91;
+  box-shadow: 0 0 1.3vmin .5vmin #7dafd7;
   animation: fadeInMiddle 2s forwards;
   animation-delay: 0.5s;
 }
