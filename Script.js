@@ -1,6 +1,5 @@
 window.onload = function() {
   document.body.style.animation = "fadeIn 2.5s forwards 0.5s";
-  document.body.style.WebkitAnimation = "fadeIn 2.5s forwards 0.5s";
 }
 
 var theDate = new Date();
