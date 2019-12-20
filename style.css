@@ -72,7 +72,7 @@ body nav.moreInfo:hover {font-size: 7vmin;}
   border-radius: 2vmin;
   width: 65vmin;
   font-family: Verdana;
-  box-shadow: 0 0 1.5vmin .5vmin #7dafd7;
+  box-shadow: 0 0 1.3vmin .5vmin #7dafd7;
 }
 
 @keyframes fadeInMiddle {
@@ -90,7 +90,7 @@ body nav.moreInfo:hover {font-size: 7vmin;}
   font-size: 3vmin;
 }
 
-/*Home.html backgrounds*/
+/*indexz.html backgrounds*/
   /*For smartphones (portrait)*/
     /*2nd most common 2019 UK and smaller (1080x1920p)*/
     @media only screen and (max-width: 1080px) and (orientation: portrait) {
