@@ -34,7 +34,7 @@ body a.nav {
   outline: 0;
   color: black;
   animation: fadeInBottom 2s forwards 0.5s;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial;
 }
 
 @keyframes fadeInBottom {
