@@ -1,6 +1,8 @@
 window.onload = function() {
-  document.body.style.animation = "fadeIn 2.5s forwards 0.5s";
-  document.body.style.WebkitAnimation = "fadeIn 2.5s forwards 0.5s";
+  document.body.style.animation = "fadeIn 2s forwards";
+  document.body.style.WebkitAnimation = "fadeIn 2s forwards";
+  document.getElementsByClassName("minav")[0].style.animation = "fadeInBottom 2s forwards";
+  document.getElementsByClassName("minav")[0].style.WebkitAnimation = "fadeInBottom 2s forwards";
 }
 
 var theDate = new Date();
@@ -11,16 +13,16 @@ if (dayofweek == 0) {
   ServiceHeading.innerHTML = "Today's service";
   if (dayofmonth < 8) {
     ServiceParagraph.innerHTML = "Today is the Holy Communion which is our first service of the month. Join us at 10:30.";
-  } 
+  }
   else if (dayofmonth < 15) {
     ServiceParagraph.innerHTML = "Today is our second service of the month. Join us at 10:30am.";
-  } 
+  }
   else if (dayofmonth < 22) {
     ServiceParagraph.innerHTML = "Today is the Holy Communion which is our third service of the month. Join us at 10:30am.";
-  } 
+  }
   else if (dayofmonth < 29) {
     ServiceParagraph.innerHTML = "Today is our fourth service of the month. Join us at 10:30am.";
-  } 
+  }
   else {
     ServiceParagraph.innerHTML = "Today is our fifth service of the month. Join us at 10:30am.";
   }
