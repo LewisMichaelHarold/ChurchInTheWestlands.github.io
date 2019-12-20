@@ -27,14 +27,12 @@ body > div.BG {
   100% {opacity: 1;}
 }
 
-body a.nav {
+body a.minav {
   opacity: 0;
-  transform: translate3d(0, 18vh, 0);
   text-decoration: none;
   outline: 0;
   color: black;
-  animation: fadeInBottom 2s forwards 0.5s;
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 @keyframes fadeInBottom {
@@ -53,6 +51,7 @@ body nav.moreInfo {
   padding: 2vmin 3vmin;
   transition: font-size linear 0.15s;
 }
+
 body nav.moreInfo:hover {font-size: 7vmin;}
 
 @media only screen and (orientation: portrait) {
