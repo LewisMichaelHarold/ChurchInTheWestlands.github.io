@@ -5,5 +5,6 @@ This is the one created by me so far: https://lewismichaelharold.github.io/
 
 To do:
 1. Make a favicon.
-2. Add St. Peter's church onto the front page.
+2. Add St. Peter's church.
 3. Make an interactive calendar to view upcoming services and events.
+4. Make contact pages.
