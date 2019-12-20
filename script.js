@@ -3,6 +3,8 @@ window.onload = function() {
   document.body.style.WebkitAnimation = "fadeIn 2s forwards";
   document.getElementsByClassName("minav")[0].style.animation = "fadeInBottom 2s forwards";
   document.getElementsByClassName("minav")[0].style.WebkitAnimation = "fadeInBottom 2s forwards";
+  NextSundayService.style.animation = "fadeInMiddle 2s forwards";
+  NextSundayService.style.WebkitAnimation = "fadeInMiddle 2s forwards";
 }
 
 var theDate = new Date();
