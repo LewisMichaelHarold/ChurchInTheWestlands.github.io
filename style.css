@@ -72,13 +72,11 @@ body nav.moreInfo:hover {font-size: 7vmin;}
   border-radius: 2vmin;
   width: 65vmin;
   font-family: Verdana;
-  box-shadow: 0 0 1.3vmin .5vmin #7dafd7;
-  animation: fadeInMiddle 2s forwards;
-  animation-delay: 0.5s;
+  box-shadow: 0 0 1.5vmin .5vmin #7dafd7;
 }
 
 @keyframes fadeInMiddle {
-  0% {transform: translate3d(0, -20vh, 0);}
+  0% {transform: translate3d(0, -15vh, 0);}
   100% {opacity: 1; transform: translate3d(0, 0, 0);}
 }
 
@@ -89,7 +87,7 @@ body nav.moreInfo:hover {font-size: 7vmin;}
 }
 
 #ServiceParagraph {
-  font-size: 2.8vmin;
+  font-size: 3vmin;
 }
 
 /*Home.html backgrounds*/
