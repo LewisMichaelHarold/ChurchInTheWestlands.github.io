@@ -8,10 +8,18 @@ body, html {
   background: rgb(45, 45, 45);
 }
 
+/*Make the page content invisible*/
 body {
   opacity: 0;
 }
 
+/*Make the page content fade in after the page loads*/
+@keyframes fadeIn {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*The background image*/
 body > div.BG {
   height: 100%;
   background-repeat: no-repeat;
@@ -21,17 +29,11 @@ body > div.BG {
   justify-content: center;
 }
 
-@keyframes fadeIn {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 /*More info <nav> navigation button <a> link wrapper*/
 body a.minav {
   opacity: 0;
   text-decoration: none;
   outline: 0;
-  /*color: white;*/
   color: black;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
@@ -42,11 +44,8 @@ body a.minav {
   100% {opacity: 1; transform: translate3d(0, 18vh, 0);}
 }
 
-/*More info <nav> navigation button*/
+/*More info <nav> navigation button >>*/
 body nav.moreInfo {
-  /*background: linear-gradient(to bottom right, #89bdd5, #9fc4e2);*/
-  /*border-radius: 2.5vmin;*/
-  /*border: .6vmin solid black;*/
   background: white;
   font-family: Verdana;
   animation-delay: 2s;
@@ -56,20 +55,19 @@ body nav.moreInfo {
   padding: 2vmin 3vmin;
   transition: font-size linear 0.15s;
 }
-
 body nav.moreInfo:hover {font-size: 7vmin;}
-
 @media only screen and (orientation: portrait) {
   body nav.moreInfo {font-size: 8.5vmin;padding: 3vmin 5vmin;}
   body nav.moreInfo:hover {font-size: 9vmin;}
 }
-
 @keyframes shadowPulse {
   0% {box-shadow: 0 0 .2vmin .3vmin white;}
   50% {box-shadow: 0 0 2vmin .3vmin white;}
   100% {box-shadow: 0 0 .2vmin .3vmin white;}
 }
+/*<< More info <nav> navigation button*/
 
+/*Next Sunday's service information box >>*/
 #NextSundayService {
   opacity: 0;
   background: white;
@@ -79,23 +77,21 @@ body nav.moreInfo:hover {font-size: 7vmin;}
   font-family: Verdana;
   box-shadow: 0 0 1.3vmin .5vmin #7dafd7;
 }
-
 @keyframes fadeInMiddle {
   0% {transform: translate3d(0, -15vh, 0);}
   100% {opacity: 1; transform: translate3d(0, 0, 0);}
 }
-
 #ServiceHeading {
   text-decoration: underline;
   font-size: 4vmin;
   padding-bottom: .5%;
 }
-
 #ServiceParagraph {
   font-size: 3vmin;
 }
+/*<< Next Sunday's service information box*/
 
-/*indexz.html backgrounds*/
+/*index.html backgrounds >>*/
   /*For smartphones (portrait)*/
     /*2nd most common 2019 UK and smaller (1080x1920p)*/
     @media only screen and (max-width: 1080px) and (orientation: portrait) {
@@ -116,8 +112,9 @@ body nav.moreInfo:hover {font-size: 7vmin;}
     @media only screen and (min-width: 1921px) and (orientation: landscape) {
       #background {background-image: url("/images/ChurchA-DT-Max.jpg");} /*4032x3024p*/
     }
+/*<< index.html backgrounds*/
 
-/*St-Andrew.html backgrounds*/
+/*St-Andrew.html backgrounds >>*/
   #backgroundA {background-position: 50% 50%;}
   /*For smartphones (portrait)*/
     /*2nd most common 2019 UK and smaller (1080x1920p)*/
@@ -137,3 +134,4 @@ body nav.moreInfo:hover {font-size: 7vmin;}
     @media only screen and (min-width: 1921px) and (orientation: landscape) {
       #backgroundA {background-image: url("/images/ChurchAI-DT-Max.jpg");} /*4032x3024p*/
     }
+/*<< St-Andrew.html backgrounds*/
