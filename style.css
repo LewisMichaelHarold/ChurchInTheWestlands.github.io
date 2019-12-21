@@ -14,7 +14,6 @@ body {
 
 body > div.BG {
   height: 100%;
-  background-position: 5% 60%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -27,22 +26,28 @@ body > div.BG {
   100% {opacity: 1;}
 }
 
+/*More info <nav> navigation button <a> link wrapper*/
 body a.minav {
   opacity: 0;
   text-decoration: none;
   outline: 0;
+  /*color: white;*/
   color: black;
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
+/*More info <nav> navigation button <a> link wrapper animation: fade in to bottom*/
 @keyframes fadeInBottom {
   0% {transform: translate3d(0, 0vh, 0);}
   100% {opacity: 1; transform: translate3d(0, 18vh, 0);}
 }
 
+/*More info <nav> navigation button*/
 body nav.moreInfo {
+  /*background: linear-gradient(to bottom right, #89bdd5, #9fc4e2);*/
+  /*border-radius: 2.5vmin;*/
+  /*border: .6vmin solid black;*/
   background: white;
-  border: .6vmin solid black;
   font-family: Verdana;
   animation-delay: 2s;
   animation: shadowPulse 3s ease-in-out infinite;
