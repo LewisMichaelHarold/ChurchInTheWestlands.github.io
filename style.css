@@ -48,6 +48,7 @@ body a.minav {
 body nav.moreInfo {
   background: white;
   font-family: Verdana;
+  box-shadow: 0;
   animation-delay: 2s;
   animation: shadowPulse 3s ease-in-out infinite;
   text-align: center;
